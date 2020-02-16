@@ -19,6 +19,7 @@ from django.urls import path, include # note that 'include' is imported too
 urlpatterns = [
     path('', include('favors.urls')), # adding the URLs for favors
     path('', include('meetings.urls')), # adding the URLs for meetings
+    path('', include('frontend.urls')), # adding URLs for frontend
     path('admin/', admin.site.urls),
-	path('accounts/', include('accounts.urls'))
+	path('accounts/', include('accounts.urls')),
 ]

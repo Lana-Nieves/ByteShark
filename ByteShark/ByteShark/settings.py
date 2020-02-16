@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     'favors.apps.FavorsConfig', # activate favors
     'meetings.apps.MeetingsConfig', # activate meetups
     'rest_framework', # activate rest framework
+    'frontend', # activate frontend
 ]
 
 MIDDLEWARE = [

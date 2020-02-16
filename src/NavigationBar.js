@@ -7,8 +7,8 @@ import NavbarCollapse from "react-bootstrap/esm/NavbarCollapse";
 import Nav from "react-bootstrap/Nav";
 import StudyGroup from './StudyGroup'
 import ReactDOM from "react-dom";
-import MainPage from './Apptest';
 import Favors from './Favors';
+import Testing from './Apptest';
 
 
 class Navaigator extends React.Component{
@@ -18,7 +18,7 @@ class Navaigator extends React.Component{
     }
 
     loadMainPage(){
-        return(ReactDOM.render(<MainPage/>,document.getElementById("root")));
+        return(ReactDOM.render(<Testing />, document.getElementById('test')));
     }
 
     loadFavor(){
@@ -31,7 +31,11 @@ class Navaigator extends React.Component{
             <div className={Navaigator}>
                 <NavBar sticky="top" expand={"lg"}>
                     <NavbarBrand>
-                        ByteShark
+                        <Nav >
+                            <Nav.Item onClick={this.loadMainPage}>
+                                ByteShark
+                            </Nav.Item>
+                        </Nav>
                     </NavbarBrand>
                     <NavbarToggle aria-controls="responsive-navbar-nav"/>
                     <NavbarCollapse>

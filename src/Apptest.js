@@ -24,13 +24,13 @@ class Testing extends React.Component{
               </div>
               <div className="test2" id="test2">
                   <div className="left Panels" onClick={this.loadStudyGroup}>
-                      Study
+                      Study Group
                   </div>
                   <div className="middle Panels">
-                      test2
+                      Tips
                   </div>
                   <div className="right Panels">
-                      test3
+                      Favors
                   </div>
               </div>
 

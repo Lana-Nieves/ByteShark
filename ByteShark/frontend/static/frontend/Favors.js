@@ -5,7 +5,7 @@ import Post from "./Post";
 class Favors extends React.Component{
 
 
-    loadPost(){
+    loadFavor(){
         return (ReactDOM.render(<Favor/>,document.getElementById("test2")));
     }
 
@@ -14,7 +14,7 @@ class Favors extends React.Component{
           <div className='container'>
               <div className={Favors}>
                   <div className='Favor'>
-                      <div className='Title'> I need a calculator!</div>
+                      <div className='Title' onClick={this.loadFavor}> I need a calculator!</div>
                       <div className='user'>Random1</div>
                   </div>
 

@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'favors.apps.FavorsConfig', # activate favors
+    'meetings.apps.MeetingsConfig', # activate meetups
     'rest_framework', # activate rest framework
 ]
 

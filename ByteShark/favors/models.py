@@ -3,13 +3,13 @@ from django.utils.translation import gettext_lazy as  _
 
 # Create your models here.
 
-class Favor(models.Model):
     # username = name of the person requiring assistance
-    # message = description of their favor
+    # description = description of their favor
     # tag = cateogrized type of favor
     # loaned = whether the item has been loaned
     # returned = whether the item has been returned to its original owner
 
+class Favor(models.Model):
     username = models.CharField(max_length=100)
     description = models.CharField(max_length=300)
     tag = models.CharField(max_length=100)
